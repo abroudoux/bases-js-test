@@ -4,10 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="script.js" defer></script>
+    <script src="app.js" defer></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <form action="POST">
+      <div>
+        <label for="firstName">Prénom</label>
+        <input type="text" id="firstName" name="firstName" />
+      </div>
+      <div>
+        <label for="lastName">Nome</label>
+        <input type="text" id="lastName" name="lastName" />
+      </div>
+      <div>
+        <label for="day">Jour</label>
+        <input type="number" max="31" min="1" name="day" id="day" />
+      </div>
+      <div>
+        <label for="month">Mois</label>
+        <select name="month" id="month">
+          <option>Sélectionner</option>
+          <option value="january">Janvier</option>
+          <option value="february">Février</option>
+          <option value="march">Mars</option>
+          <option value="april">Avril</option>
+          <option value="may">May</option>
+          <option value="june">Juin</option>
+          <option value="jully">Juillet</option>
+          <option value="august">Août</option>
+          <option value="september">Septembre</option>
+          <option value="october">Octobre</option>
+          <option value="november">Novembre</option>
+          <option value="decembrer">Décembre</option>
+        </select>
+      </div>
+      <div>
+        <label for="year">Année</label>
+        <input type="number" max="2023" name="year" id="year" />
+      </div>
+      <button type="submit">Envoyer</button>
+    </form>
+    <div id="message"></div>
   </body>
 </html>
