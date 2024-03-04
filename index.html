@@ -14,40 +14,40 @@
     />
   </head>
   <body>
-    <form action="POST">
+    <form action="POST" id="form">
       <div>
         <label for="firstName">Prénom</label>
-        <input type="text" id="firstName" name="firstName" />
+        <input type="text" id="firstName" name="firstName" required />
       </div>
       <div>
-        <label for="lastName">Nome</label>
-        <input type="text" id="lastName" name="lastName" />
+        <label for="lastName">Nom</label>
+        <input type="text" id="lastName" name="lastName" required />
       </div>
       <div>
         <label for="day">Jour</label>
-        <input type="number" max="31" min="1" name="day" id="day" />
+        <input type="number" max="31" min="1" name="day" id="day" required />
       </div>
       <div>
         <label for="month">Mois</label>
-        <select name="month" id="month">
+        <select name="month" id="month" required>
           <option>Sélectionner</option>
-          <option value="january">Janvier</option>
-          <option value="february">Février</option>
-          <option value="march">Mars</option>
-          <option value="april">Avril</option>
-          <option value="may">May</option>
-          <option value="june">Juin</option>
-          <option value="jully">Juillet</option>
-          <option value="august">Août</option>
-          <option value="september">Septembre</option>
-          <option value="october">Octobre</option>
-          <option value="november">Novembre</option>
-          <option value="decembrer">Décembre</option>
+          <option value="janvier">Janvier</option>
+          <option value="fevrier">Février</option>
+          <option value="mars">Mars</option>
+          <option value="avril">Avril</option>
+          <option value="mai">Mai</option>
+          <option value="juin">Juin</option>
+          <option value="juillet">Juillet</option>
+          <option value="aout">Août</option>
+          <option value="septembre">Septembre</option>
+          <option value="octobre">Octobre</option>
+          <option value="novembre">Novembre</option>
+          <option value="decembre">Décembre</option>
         </select>
       </div>
       <div>
         <label for="year">Année</label>
-        <input type="number" max="2023" name="year" id="year" />
+        <input type="number" max="2023" name="year" id="year" required />
       </div>
       <button type="submit">Envoyer</button>
     </form>

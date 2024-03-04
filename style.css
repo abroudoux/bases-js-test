@@ -6,6 +6,16 @@
   font-family: "Lato", sans-serif;
 }
 
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+  flex-direction: column;
+}
+
 form {
   background-color: #fff;
   border-radius: 8px;
@@ -57,4 +67,14 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #0056b3;
+}
+
+#message {
+  display: none;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 24px;
 }
